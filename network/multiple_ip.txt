@@ -1,0 +1,12 @@
+auto eth0
+iface eth0 inet static
+address #IP_1#
+netmask 255.255.255.0
+gateway #Gateway_1#
+
+auto eth0:1
+iface eth0:1 inet static
+address #IP_2#
+netmask 255.255.255.0
+
+#Only one gateway for multiple IPs. To add another IP just add the block going #auto eth0:2 
